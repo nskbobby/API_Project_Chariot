@@ -1,0 +1,38 @@
+<%-include("../partials/header.ejs")%>
+<div class="min-vh-100 px-3 page-background">
+
+    <section>
+        <h2 class="display-4">Get in Touch</h2>
+        <p class="lead">
+            We’d love to hear from you! Whether you have questions, feedback, or need support, feel free to reach out.
+        </p>
+    </section>
+    <section>
+        <h2 class="display-4">Contact Information</h2>
+        <ul class="lead">
+            <li><strong>Email:</strong> <a href="mailto:support@chariotapi.com">support@chariotapi.com</a></li>
+            <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+            <li><strong>Office Hours:</strong> Monday - Friday, 9 AM - 5 PM (UTC)</li>
+        </ul>
+    </section>
+    <section>
+        <h2 class="display-4">Contact Form</h2>
+        <form class="form-group lead" action="submit_contact_form.php" method="POST">
+            <label for="name" class="form-label">Name:</label>
+            <input class="form-control" type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input class="form-control" type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+
+            <button class="btn btn-primary mt-2" type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+
+</div>
+
+<%-include("../partials/footer.ejs")%>

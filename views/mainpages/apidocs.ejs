@@ -1,0 +1,66 @@
+<%-include("../partials/header.ejs")%>
+<div class="apidocs-main px-3 py-2 page-background ">
+<section >
+    <h2>Introduction</h2>
+    <p>
+        Welcome to the Chariot API documentation. This API allows you to integrate with our services seamlessly. Below you will find details on endpoints, request/response formats, and examples.
+    </p>
+</section>
+<section>
+    <h2>Base URL</h2>
+    <p class="codecontent bg-light rounded text-center"><code>https://api.chariot.com/v1</code></p>
+</section>
+<section>
+    <h2>Authentication</h2>
+    <p>
+        All requests to the Chariot API require an API key. You can obtain your API key by signing up on our platform.
+    </p>
+</section>
+<section>
+    <h2>Endpoints</h2>
+    <h3>1. Get Resources</h3>
+    <p><strong>Endpoint:</strong> <code>GET /resources</code></p>
+    <p><strong>Description:</strong> Retrieve a list of resources.</p>
+    <h4>Response:</h4>
+    <pre class="codecontent bg-light rounded"><code>
+{
+"data": [
+{
+    "id": "1",
+    "name": "Resource 1"
+},
+{
+    "id": "2",
+    "name": "Resource 2"
+}
+]
+}
+    </code></pre>
+
+    <h3>2. Create Resource</h3>
+    <p><strong>Endpoint:</strong> <code>POST /resources</code></p>
+    <p><strong>Description:</strong> Create a new resource.</p>
+    <h4>Request Body:</h4>
+    <pre class="codecontent bg-light rounded"><code>
+{
+"name": "New Resource"
+}
+    </code></pre>
+    <h4>Response:</h4>
+    <pre class="codecontent bg-light rounded"><code>
+{
+"id": "3",
+"name": "New Resource"
+}
+    </code></pre>
+</section>
+<section>
+    <h2>Examples</h2>
+    <h3>Getting All Resources</h3>
+    <pre class="codecontent bg-light rounded"><code>
+curl -X GET https://api.chariot.com/v1/resources \
+-H "Authorization: Bearer YOUR_API_KEY"
+    </code></pre>
+</section>
+</div>
+<%-include("../partials/footer.ejs")%>

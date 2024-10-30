@@ -1,0 +1,18 @@
+Project:
+- ------------------------------Front end-------------------------------------------- 
+ completd - Create a frontend website structure with all the pages and functionalities.
+ pending - Display some fun api's on home when user opens API website.
+ pending - provide upgrade option for customers on UI after logging in. in account and plan sectoin. 
+
+- ------------------------------Back end------------------------------------------------
+ pending - Create a login and create account page also verify when user clicks to buy plan.imp user authentication using jwt(dont use exp session)
+ pending - Create java backend rest API for storing traffic junction complex to communicate and retrive required information for users.
+ pending - perform user metrics and show pending api calls count and give them a add on option to recharge or upgrade their plan
+ pending - when ever user connects to a API create a log where it stores all API calls data, User calls, particular API calls, Create a metrics dashboard in backend for company to see which 
+ pending - /// is mostly used by cients.
+ pending - Advertise something in API or show recent news and updated of API"s or new arrivals which they can try for free for 10calls to check it.(In this way the API providers show interest on 
+ pending - // joining ou network)
+
+----------Deployment and maintainence----------
+On process- version control using GIT (https://nskbobby.github.io/nskbobby/API_Project_Chariot)
+pending - build and deploy on render.

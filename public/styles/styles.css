@@ -1,0 +1,266 @@
+/*====================================Common Do's===============*/
+body, html {
+    overflow-x: hidden;
+}
+header, main {
+    width: 100%;
+}
+
+main{
+    padding-top: 56px;
+}
+.no-decor{
+    text-decoration: none;   
+   color: white;
+   }
+
+.viewportheight{
+    height: 100vh;
+}
+
+.topzindex{
+z-index: 1000;
+}
+
+.jumbotron{
+    font-weight: 1000;
+}
+
+.lead{
+    font-weight: 330;
+}
+
+.text-limited {
+    overflow: hidden;             /* Hides overflow content */
+    text-overflow: ellipsis;     /* Adds ellipsis (...) for overflowed text */
+}
+/****************************Home*****************************/
+
+.page-background{
+    background-color: #c4dfdfb6;    
+   
+}
+
+.banner-highlight{
+    background-color: #a96329b6;
+}
+
+.tile-design-light{
+    background-color: #C8CFA0;
+}
+
+.card-header{
+    background-color: #6a79936c; 
+}
+
+.card-body{
+    background-color: #061a3b3a; 
+}
+
+
+.page-font{
+
+    font-weight: 370;         /* Sets a light font weight */
+  line-height: 1.2;         /* Adjusts line spacing */
+    
+}
+
+
+
+/****************************Pricing tiles************************/
+
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800);
+.pricing1 {
+  font-family: "Montserrat", sans-serif;
+  color: #8d97ad;
+  font-weight: 300;
+}
+
+.pricing1 h1,
+.pricing1 h2,
+.pricing1 h3,
+.pricing1 h4,
+.pricing1 h5,
+.pricing1 h6 {
+  color: #3e4555;
+}
+
+.pricing1 .font-weight-medium {
+  font-weight: 500;
+}
+
+.pricing1 .bg-light {
+  background-color: #f4f8fa !important;
+}
+
+.pricing1 .subtitle {
+  color: #8d97ad;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.pricing1 .font-14 {
+  font-size: 14px;
+}
+
+.pricing1 h5 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+
+.pricing1 .card.card-shadow {
+  -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+}
+
+.pricing1 .btn-success-gradiant {
+  background: #2cdd9b;
+  background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
+  background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+  background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+  background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+}
+
+.pricing1 .btn-success-gradiant:hover {
+  background: #1dc8cc;
+  background: -webkit-linear-gradient(legacy-direction(to right), #1dc8cc 0%, #2cdd9b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#1dc8cc), to(#2cdd9b));
+  background: -webkit-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
+  background: -o-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
+  background: linear-gradient(to right, #1dc8cc 0%, #2cdd9b 100%);
+}
+
+.pricing1 .btn-danger-gradiant {
+  background: #ff4d7e;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+  background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+}
+
+.pricing1 .btn-danger-gradiant:hover {
+  background: #ff6a5b;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
+  background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+  background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+  background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+}
+
+.pricing1 .btn-md {
+  padding: 15px 30px;
+  font-size: 16px;
+}
+
+
+.pricing1 .price-badge {
+  top: -13px;
+  left: 0;
+  right: 0;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.pricing1 .badge-inverse {
+  background-color: #3e4555;
+}
+
+.pricing1 .display-5 {
+  font-size: 3rem;
+	color: #263238;
+}
+
+.pricing1 .pricing sup {
+  font-size: 18px;
+  top: -20px;
+}
+
+.pricing1 .pricing .yearly {
+  display: none;
+}
+
+/*==========================================Testimonials===================*/
+#testimonials .card {
+  border: none;
+  background: #f8f9fa;
+}
+#testimonials .card-text {
+  font-size: 1.1em;
+  font-style: italic;
+}
+#testimonials .card-title {
+  font-weight: bold;
+  color: #333;
+}
+
+/*=======================API Docs main==============================*/
+.apidocs-main h2{
+    font-size: 2.5rem; 
+    font-weight: 350;  /* Light */
+    line-height: 1.2;  /* Height of the line */
+    letter-spacing: -.02em; /* Slightly tighter letter spacing */
+    color: inherit;
+}
+
+.apidocs-main h3{
+    font-size: 2.0rem; 
+    font-weight: 350;  /* Light */
+    line-height: 1.2;  /* Height of the line */
+    letter-spacing: -.02em; /* Slightly tighter letter spacing */
+    color: inherit;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .apidocs-main .codecontent {
+        width:100%; /* Color for screens smaller than 600px */
+    }}
+
+    @media screen and (min-width: 800px) {
+        .apidocs-main .codecontent {
+            width:30%; /* Color for screens smaller than 600px */
+        }}
+
+
+
+/*=====================Billing Page==================================*/
+
+.tile-design-lightsky {
+    background: rgba(46, 99, 124, 0.363); /* Light card background */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.banner-highlight-sky {
+    background-color: #5e828465; /* Light blue background */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.api-examples {
+    margin-top: 20px;
+}
+
+.tile {
+    background: #007bff; /* Blue background for tiles */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.tile:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+
+.btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}

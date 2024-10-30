@@ -1,0 +1,30 @@
+{
+  "name": "api_project_chariot",
+  "version": "1.0.0",
+  "description": "This api emcompasses all public api revelent to each other and encorporates as one. i am gonna use AI api as well to drive this",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nskbobby/API_Project_Chariot.git"
+  },
+  "author": "Naga Sai Krishna Kola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nskbobby/API_Project_Chariot/issues"
+  },
+  "homepage": "https://github.com/nskbobby/API_Project_Chariot#readme",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "path": "^0.12.7",
+    "url": "^0.11.4"
+  }
+}

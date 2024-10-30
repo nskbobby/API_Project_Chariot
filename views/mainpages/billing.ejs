@@ -1,0 +1,116 @@
+<%- include("../partials/header.ejs") %>
+
+<div class="container-fluid d-flex px-3 py-2 min-vh-100 page-background">
+    <div class="card text-center align-items-center tile-design-lightsky p-4">
+        <% if (plan === 'Starter Plan') { %>
+            <h1 class="display-4">Hello Developer! Let’s gear up to launch your ideas into the world with our Starter Plan!</h1>
+            <div class="banner-highlight-sky lead mt-3">
+                <h3 class="mt-4">Plan Details</h3>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                  </svg>
+                  With this Starter Pack, you get access to 5 APIs, 5000 requests for the whole month to serve your app seamlessly anytime, and email support whenever you have a question, all for just <strong>$28/month!</strong></p>
+            </div>
+        
+        <% } else if (plan === 'Growth Plan') { %>
+            <h1 class="display-4">Hello Innovator! Ready to scale your projects and reach new heights?</h1>
+            <div class="banner-highlight-sky mt-3">
+                <h3 class="mt-4">Plan Details</h3>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                  </svg>
+                  The Growth Plan provides access to 15 APIs, allowing for 25,000 requests each month to power your scaling projects, along with priority email support to help you every step of the way, all for just <strong>$49/month!</strong></p>
+            </div>
+
+        <% } else if (plan === 'Pro Plan') { %>
+            <h1 class="display-4">Hello Visionary! Elevate your applications with our Pro Plan!</h1>
+            <div class="banner-highlight-sky mt-3">
+                <h3 class="mt-4">Plan Details</h3>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                  </svg>
+                  With our Pro Plan, you unlock access to all APIs, 100,000 requests per month for your high-demand applications, and 24/7 support to ensure your success, all for just <strong>$99/month!</strong></p>
+            </div>
+
+        <% } else if (plan === 'Enterprise Plan') { %>
+            <h1 class="display-4">Hello Leader! Let’s customize your solutions for greatness!</h1>
+            <div class="banner-highlight-sky mt-3">
+                <h3 class="mt-4">Plan Details</h3>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                      </svg>
+                    Our Enterprise Plan offers customizable solutions tailored to your needs, including unlimited API access and dedicated support, with pricing based on your unique requirements. <strong>Contact us for details!</strong></p>
+            </div>
+        <% } %>
+
+     
+        <!-- Comparison Table -->
+        <h3 class="mt-4">Plan Comparison</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr class="table-row">
+                    <th>Feature</th>
+                    <th>Starter Plan</th>
+                    <th>Growth Plan</th>
+                    <th>Pro Plan</th>
+                    <th>Enterprise Plan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>APIs Access</td>
+                    <td>5</td>
+                    <td>15</td>
+                    <td>All</td>
+                    <td>Custom</td>
+                </tr>
+                <tr>
+                    <td>Requests per Month</td>
+                    <td>5,000</td>
+                    <td>25,000</td>
+                    <td>100,000</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>Email Support</td>
+                    <td>✔</td>
+                    <td>✔ (Priority)</td>
+                    <td>✔ (24/7)</td>
+                    <td>✔ (Dedicated)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Next Steps -->
+        <h3 class="mt-4">Next Steps</h3>
+        <p>Click the button below to proceed to payment and start using your plan!</p>
+        <a href="/paymentbroker/<%= plan.replace(' ', '-').toLowerCase() %>" class="btn btn-primary mt-3">Proceed to Payment</a>
+
+        <!-- User Testimonials -->
+        <div class="mt-5 carousel slide" data-bs-ride="carousel">
+            <h4>User Testimonials</h4>
+            <div class="carousel-inner">
+            <blockquote class="blockquote carousel-item active">
+                <p class="mb-0 ">"The Chariot API Starter Plan has been instrumental in getting my app off the ground. The support is fantastic!"</p>
+                <footer class="blockquote-footer">Jane Doe, Developer</footer>
+            </blockquote>
+            <blockquote class="blockquote carousel-item ">
+                <p class="mb-0 ">"I scaled my project easily with the Growth Plan. Highly recommended!"</p>
+                <footer class="blockquote-footer">John Smith, Entrepreneur</footer>
+            </blockquote>
+        </div>
+        </div>
+
+        <!-- FAQs or Support Links -->
+        <div class="mt-5">
+            <h4>Have Questions?</h4>
+            <p>Check our <a href="/faq">FAQs</a> or <a href="/support">contact support</a> for more information.</p>
+        </div>
+    </div>
+</div>
+
+<%- include("../partials/footer.ejs") %>
