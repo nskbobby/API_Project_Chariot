@@ -54,7 +54,7 @@ app.get('/getISS',async(req,res)=>{
 
 
 //landingPage
-app.get("/",isAuthenticated,async(req,res)=>{
+app.get("/"/*,isAuthenticated*/,async(req,res)=>{
  
     const data = await apipage.getapiResponse("https://api.wheretheiss.at/v1/satellites/25544"); // Await the response
     const affr= await apipage.getapiResponse("https://www.affirmations.dev/");
