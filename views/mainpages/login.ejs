@@ -1,0 +1,105 @@
+<%- include("../partials/header.ejs") %>
+<div class="container-main min-vh-100 py-2 px-3 page-background page-font fullwidth">
+    
+    <div class="section-main d-flex flex-column flex-md-row w-100 jumbotron page-background">
+        <section class="how align-items-start mr-md-4 flex-grow-1 mb-4">
+            <h3 class="display-4">Why Choose Our Service?</h3>
+            <ul class="list-group">
+                <h5 class="lead"><b>Easy Integration:</b> Connect to multiple APIs effortlessly.</h5>
+                <h5 class="list-item lead"><b>Cost-Effective:</b> Access a variety of APIs at discounted rates.</h5>
+                <h5 class="list-item lead"><b>Secure:</b> Manage access with a single token for peace of mind.</h5>
+            </ul>    
+        </section>
+        <%switch(request){
+            case "login":%>
+        <section class="login-section d-flex align-items-center justify-content-center flex-column ml-md-4 ">
+            <div class="border rounded-4 p-4 shadow-sm bg-white">
+                <h3 class="text-center">Login</h3>
+                <form action="/login" method="POST">
+                    <div class="form-group">
+                        <label for="username" class="h5">Username or Email</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="h5">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-secondary btn-block">Login</button>
+                    <%if(message && message!=='undefined'){%>
+                <h7 class="lead"><%=message%></h7>
+            <%}%>
+                </form>
+                <div class="text-center mt-3 h6">
+                    <a href="/logincontrol/forgotpassword">Forgot Password?</a>
+                </div>
+                <div class="text-center mt-2 h6">
+                    <p>Don't have an account? <a href="/logincontrol/signup">Sign up here</a></p>
+                </div>
+            </div>
+        </section>
+        <%break;
+        case "signup":%>
+        <section class="login-section d-flex align-items-center justify-content-center flex-column ml-md-4 ">
+            <div class="border rounded-4 p-4 shadow-sm bg-white">
+                <h3 class="text-center">Create Account</h3>
+                <form action="/signup" method="POST">
+                    <div class="form-group">
+                        <label for="email" class="h5">Email</label>
+                        <input type="text" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="username" class="h5">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="h5">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmpassword" class="h5">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirmpassword" name="confirm_password" required>
+                    </div>
+                    <button type="submit" class="btn btn-secondary btn-block">Signup</button>
+                    <%if(message && message!=='undefined'){%>
+                <h7 class="lead"><%=message%></h7>
+            <%}%>
+                </form>
+                 <div class="text-center mt-2 h6">
+                    <p>Already have an account? <a href="/logincontrol/login">Log In here</a></p>
+                </div>
+            </div>
+        </section>
+        <%break;
+        case "forgotpassword":%>
+        <section class="login-section d-flex align-items-center justify-content-center flex-column ml-md-4 ">
+            <div class="border rounded-4 p-4 shadow-sm bg-white">
+                <h3 class="text-center">Forgot Password</h3>
+                <form action="/forgotpassword" method="POST">
+                    <div class="form-group">
+                        <label for="email" class="h5">Enter your email. you'll get a reset link</label>
+                        <input type="text" class="form-control" id="email" name="email" required>
+                    </div>
+                    <%if(message && message!=='undefined'){%>
+                <h7 class="lead"><%=message%></h7>
+            <%}%>
+                    <button type="submit" class="btn btn-secondary btn-block">send</button>
+                </form>
+                 <div class="text-center mt-2 h6">
+                    <p>You got it?<a href="/logincontrol/login">Log In here</a></p>
+                </div>
+            </div>
+        </section>
+
+        <%break;}%>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="banner-highlight w-100 jumbotron rounded text-center">
+                <h4 class="display-4">Streamline Your API Access</h4>
+                <h5 class="lead">Experience seamless integration with a single token for all your data needs.</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("../partials/footer.ejs") %>

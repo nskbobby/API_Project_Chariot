@@ -1,0 +1,124 @@
+<%-include("../partials/header.ejs")%>
+<div class="min-vh-100 page-background px-4">
+  <div class="container">
+    <section id="pageheading" class="display-2">Account settings</section>
+
+    <section class="min-vh-100 rounded px-1 mt-3 banner-highlight">
+        <% if(selection!="accountsettings"){ %>
+        <a href="/accounticon/accountsettings" class="no-decor text-dark lead">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+            </svg>go back
+        </a>
+        <% } %>
+      <%switch(selection){ 
+        case "accountsettings":%>
+        <ul class="list-unstyled">
+        <li class="list-item lead display-4">
+          <a href="/accounticon/profile" class="no-decor text-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg> Profile</a>
+        </li>
+        <li class="list-item lead display-4">
+          <a href="/accounticon/settings" class="no-decor text-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg>
+            site settings
+          </a>
+        </li>
+        <li class="list-item lead display-4">
+          <a href="/accounticon/changepassword" class="no-decor text-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg>
+            change password
+          </a>
+        </li>
+        <li class="list-item lead btn btn-secondary ">
+          <a href="/logout" class="lead no-decor text-dark font-weight-bold">
+            Log Out
+          </a>
+        </li>
+      </ul>
+      <% break;
+      case "profile":%>
+      <div class="settings-section">
+        <h1 class="display-4">Profile</h1>
+        <ul class="list-unstyled pl-2 text-break">
+<div class="profile username mb-3">
+            <li>Name:</li>
+                <li> John Doe</li>
+            </div>
+
+        <div class="profile email mb-3" >
+                <li>Email:</li>
+                <li> johndoe@example.com</li>
+            </div>
+        <div class="profile accounttype mb-3"> 
+                <li>Account Type:</li>
+                <li>Enterprise</li>
+            </div>
+        <div class="profile businessname mb-3"> 
+                <li>Business name: </li>
+                <li>ABC enterprises</li>
+            </div>
+            <div class="profile businessphone mb-3">
+                <li>Business phone</li>
+                <li>+1234567890</li>
+            </div>
+                <!-- Add more profile details as needed -->
+            </ul>
+      <%break;
+      case "settings":%>
+      <div class="settings-section">
+        <h1 class="display-4">Settings</h1>
+        <ul class="list-unstyled">
+            <li> <div class="form-check form-switch">
+        <input id="notificationcheckbox" type="checkbox" class="form-check-input">
+        <label for="notificationcheckbox" class="form-check-label d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM5.064 3.5C5.385 2.126 6.716 1 8 1s2.615 1.126 2.936 2.5a5.526 5.526 0 0 1 2.305 4.414V10a1 1 0 0 1 .724 1.686A1.003 1.003 0 0 1 13 12H3a1.003 1.003 0 0 1-.724-1.314A1 1 0 0 1 3 10v-.086a5.526 5.526 0 0 1 2.064-4.414z"/>
+            </svg>
+            <span class="ms-2">Notification Preferences</span>
+        </label>
+    </div></li>
+    <li><strong>Connected Accounts:</strong></li>
+    <li>abcapiinteract@abc.com     <a href="/profile/settings/connectedaccounts/edit" >edit</a>
+    </li>
+        </ul>
+
+    </div>
+      <%break;
+      case "changepassword":%>
+      <div class="settings-section">
+        <h1 class="display-4">Change password</h1>
+        <ul class="list-unstyled">
+            <li>
+<div class="form">
+    <form action="/changepassword" method="post" class="d-flex flex-column short-textinput">
+        <label for="currentpassword" class="form-label">Enter Your Current Password:</label>
+        <input type="password" name="currentpassword" placeholder="currentpasword">
+        <label for="newpassword" class="form-label">Enter Your New Password:</label>
+        <input type="password" name="currentpassword" placeholder="newpasword">
+        <button type="submit" class="btn btn-dark mt-2">update password</button>
+        </form>
+    </div>
+</li>
+            <li><a ref="/passwordpolicy"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg>Reset password</a></li>
+            <li><a ref="/passwordpolicy"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg>Password Policy</a></li>
+         
+        </ul>
+    </div>
+
+      <% } %>
+
+    </section>
+  </div>
+</div>
+<%-include("../partials/footer.ejs")%>
